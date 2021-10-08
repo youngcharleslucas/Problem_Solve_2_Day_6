@@ -87,6 +87,28 @@ single_non_prime = remove_duplicates (non_prime_number_100)
 
 prime_list = remove_numbers (non_prime_number_100)
 # print prime number list-----------------------------
-print(prime_list) 
+print(f'Prime number list up to 100 {prime_list}') 
 
 
+# 3.------------fibonacci scale--------------
+'''
+The fibonacci scale starting at one going up. Since it could go on forever, I will set a max to it, 100
+
+fibonacci list
+
+function that takes a + b = c
+c will be added to the list
+a will be index[-2] and b will be inde[-1] from fibonacci list
+I will cheat and have 1 on the list already
+
+'''
+
+def fibonacci_list_100 ():
+    fibonacci_list = [1,1,]
+    while fibonacci_list[-1] <= 100:
+        fib_sum = fibonacci_list[-2] + fibonacci_list [-1]
+        fibonacci_list.append(fib_sum)
+    return fibonacci_list
+
+fibonacci_to_100 = fibonacci_list_100()
+print(f'Limited Fibonacci starting at 1 {fibonacci_to_100}')
