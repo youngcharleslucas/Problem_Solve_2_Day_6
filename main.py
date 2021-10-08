@@ -50,7 +50,7 @@ Function for determining prime numbers (range)
                 add number to prime list
 
 '''
-
+#----------created a non_prime list, because that is all I could figure out-----------
 number_range = range(2,101,1)
 
 def non_prime_numbers (number_range):
@@ -61,10 +61,32 @@ def non_prime_numbers (number_range):
                 non_prime_list.append(number)
                 continue
     return non_prime_list
+#-----------created function to remove duplicates from my non prime list----------------------------
+def remove_duplicates (duplicate_list):
+    single_list = []
+    for duplicate in duplicate_list:
+        if duplicate in single_list: pass
+        else: single_list.append(duplicate)
+    return single_list
 
-def remove 
+#-------------create list that removes non prime numbers, leaving prime numbers--------------------
+
+
+def remove_numbers (non_prime_list):
+    prime_list = []
+    for prime in range(0,101,1):
+        if prime in non_prime_list: pass
+        else: prime_list.append(prime)
+    return prime_list
+
 
 non_prime_number_100 = non_prime_numbers (number_range)
-print(non_prime_number_100)
+
+
+single_non_prime = remove_duplicates (non_prime_number_100) 
+
+prime_list = remove_numbers (non_prime_number_100)
+# print prime number list-----------------------------
+print(prime_list) 
 
 
