@@ -34,3 +34,37 @@ that you will develop and carry forward with you for all problems you encounter 
 
 '''
 
+# 1.---------Happy Numbers---------------
+
+
+# 2.----------Prinme Numbers-------------
+
+'''
+write a range(101)
+
+Function for determining prime numbers (range)
+    prime list
+    for number in range100:
+        for division in range:
+            if number / division != int and number != number:
+                add number to prime list
+
+'''
+
+number_range = range(2,101,1)
+
+def non_prime_numbers (number_range):
+    non_prime_list = []
+    for number in number_range:
+        for divisor in number_range:
+            if number % divisor == 0 and number != divisor:
+                non_prime_list.append(number)
+                continue
+    return non_prime_list
+
+def remove 
+
+non_prime_number_100 = non_prime_numbers (number_range)
+print(non_prime_number_100)
+
+
