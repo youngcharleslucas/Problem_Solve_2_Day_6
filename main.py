@@ -112,3 +112,46 @@ def fibonacci_list_100 ():
 
 fibonacci_to_100 = fibonacci_list_100()
 print(f'Limited Fibonacci starting at 1 {fibonacci_to_100}')
+
+
+"""
+Harder version. Start the fibonacci sequence at a number defined by the user.
+
+user input for number
+
+use fractional values to find the numbers that go into the input # fib sequence
+    make them floats with limited decimal places
+    the golden ratio is 0.6180339887
+    the number before that in the sequence would be 0.3819660113
+
+
+"""
+
+user_fib = input(int("""Let's iterate a fibonacci sequence from a number of your choosing. 
+                        What number would you like to start at?: """))
+
+def first_two_fib(user_fib):
+    fib_list = []
+    start_one = user_fib * 0.6180339887
+    start_two = user_fib * 0.3819660113 
+    fib_list.append(start_one)
+    fib_list.append(start_two)
+    return fib_list
+
+def fib_sequence (user_fib, fib_list):
+    fib_list = []
+    limited_fib_list: round(fib_list, 2)
+    next_num = 0
+    count = 0
+    while count < 6:
+        next_num = fib_list [-1] + fib_list [-2]
+        fib_list.append(next_num)
+        count += 1
+    else: return limited_fib_list
+
+startfirst_two_fib = first_two_fib(user_fib)
+the_sequence = fib_sequence(user_fib, startfirst_two_fib)
+
+print(the_sequence[1:])
+
+
